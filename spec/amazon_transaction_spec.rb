@@ -17,7 +17,6 @@ describe 'AmazonTransaction' do
       expect(amazon_transaction_with_discount.instance_variable_get(:@discount)).to eq(20)
     end
   end
-
   describe '#total' do
     it 'returns the current total' do
       amazon_transaction.total = 100
